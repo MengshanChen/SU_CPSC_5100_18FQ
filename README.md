@@ -11,6 +11,8 @@ Creation of project requirements, scenarios, personas, user stories, and risks t
 Identification of effort, estimation, resource allocation and risk management following the Agile methodologies
 of SCRUM, XP, and Lean processes.
 
+![](images/haha.png?raw=true)
+
 ## Course Learning Objectives
 
 * An understanding of the requirements process
@@ -60,6 +62,7 @@ ISBN-13: 978-0321635846<br/>
 * 10/22 - Requirements management (chp. 22)
 * 10/24 - The business requirements document (BRD) & market requirements document (MRD)
 * 10/29 - Roles in the agile requirements process (chp. 11 / chp. 14)
+          We might have a guest speaker this evening. Stayed tuned.
 * 10/31 - Mid-term exam in class, closed book
 * 11/05 - Portfolio planning (chp. 23)
 * 11/07 - Use cases and user stories (chp. 6 / chp. 19)
