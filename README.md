@@ -42,8 +42,9 @@ ISBN-13: 978-0321635846<br/>
 ## Important Dates
 
 * 09/26 - First class of the quarter
-* 11/05 - Mid-term exam in class
-* 12/05 & 12/12 - In class presentations
+* 10/31 - Mid-term exam in class
+* 12/10 - In class presentations
+* 12/10 - Final exam available on github
 * 12/12 - Last day of the quarter, final exam due
 
 
@@ -59,8 +60,8 @@ ISBN-13: 978-0321635846<br/>
 * 10/22 - Requirements management (chp. 22)
 * 10/24 - The business requirements document (BRD) & market requirements document (MRD)
 * 10/29 - Roles in the agile requirements process (chp. 11 / chp. 14)
-* 10/31 - Portfolio planning (chp. 23)
-* 11/05 - Mid-term exam in class, closed book
+* 10/31 - Mid-term exam in class, closed book
+* 11/05 - Portfolio planning (chp. 23)
 * 11/07 - Use cases and user stories (chp. 6 / chp. 19)
 * 11/12 - Scenario focused engineering
 * 11/14 - Project vision and scope (chp. 13)
@@ -69,8 +70,7 @@ ISBN-13: 978-0321635846<br/>
 * 11/26 - Intersection of design with requirements: UI / UX (chp. 7)
 * 11/28 - Intersection of architecture with requirements: Non-functional requirements (chp. 17)
 * 12/03 - The software requirements specification (SRS)
-* xx/yy - Requirements and different project types
-* 12/05 - Presentations
+* 12/05 - Requirements and different project types
 * 12/10 - Presentations, final exam available
 * 12/12 - Final exam due
 
