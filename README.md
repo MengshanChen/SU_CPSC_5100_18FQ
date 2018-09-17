@@ -85,20 +85,24 @@ ISBN-13: 978-0321635846<br/>
 
 ## Grading
 
+### High-level
+
 This class is graded on the following scale. Over the course of the quarter you will be given, via homework, exams, projects, and participation, the opportunity to earn 100 points. Exams may include an "extra credit" opportunity. An "A" grade is easily achievable in my courses, but you will need to put in the work.
 
 * 95+ points - A
 * 90+ points - B
 * 85+ points - C
 
-This is a tentative break-down, I'll adjust during the first week of class based on class size and experience.
+### Course assignment and grading breakdown
 
-* Course assignment and grading breakdown...
-* Outside reading
-* The BRD
-* The SRS
-* Use cases and user stories
+This is a tentative break-down, I'll adjust during the first week(s) of class based on class size and experience.
+
+* Outside reading assignments (1-pagers)
+* The BRD (paper)
+* The SRS (paper)
+* Use cases and user stories (paper, UML, etc.)
 * In-class discussions
+* Pop quizzes in-class
 
 Software engineering is a team process and one of the most important parts of that is communication. This includes both written and verbal. As such, the exams will be essay format (to include requirements artifacts as necessary). I also *expect* full classroom participation in discussions. Feel free to voice your opinions and disagree with what you're learning. That's part of the process. But do so in a respectful manner.
 
