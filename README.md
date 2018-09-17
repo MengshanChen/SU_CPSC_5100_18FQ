@@ -114,37 +114,33 @@ We have 2 hours twice a week. Each class will consist of a 10 - 15 minute class 
 
 Occasionally we will have one or more of you presenting to the class. I'll schedule these as appropriate.
 
-## Academic Service Learning (ASL)
-
-Academic service learning is defined for this course as a credit-bearing educational experience in which students participate in an organized service activity that meets identified community needs and reflect critically on the service activity in such a way as to gain further understanding of the course content and a broader appreciation of the discipline while enhancing their personal development and commitment to social justice.
-
-Software engineering encompasses a disciplined approach to planning, design, development and maintenance of large and complex software systems. In an academic program, the concern is to ensure that students learn about the fundamental concepts that would enable them to apply these approaches and associated best practices to software systems. Getting hands on experience on actual software systems (instead of toy case studies) enable the abstract concepts to become concrete. Through the Academic Service Learning projects, students will be able to focus on learning the course material in the context of a real-world project, reflect on their learning, open avenues for discussion, and help a local non-profit organization in their software needs. We take a project-based approach to service learning, which enables the students to work on various aspects of the service learning project throughout the quarter. The project enables the students to understand and master the course objectives.
-
 ## Attendance policy
 
 Class attendance is strongly encouraged. Students missing a class are responsible for any material assigned or covered in class during their absence. Active participation in the class discussions and activities is expected and it could influence your grade in boundary cases. Punctual attendance is highly encouraged as late arrival is distracting for everyone in the class.
 
 ## Personal Electronics Policy
 
-Cellphone usage is not permitted in class. Turn them off and put them out of sight. You may use a laptop or tablet to take notes but do not use them to surf the web, chat, Facebook or catch up on email. No electronic equipment may be used during the exam unless otherwise instructed.
+Cellphone usage is not permitted in class. Turn them off and put them out of sight. You may use a laptop or tablet to take notes but do not use them to surf the web, chat, Snapchattagrammabook or catch up on email. No electronic equipment may be used during the exam unless otherwise instructed. If you have work issues to deal with I completely understand. But, take them outside. We'll catch you up when you get back.
 
 ## Homework Policy
 
-Late homework will not be accepted. You are responsible to make sure your assignment is submitted before the deadline. Late submissions will receive a zero. Individual extensions will only be given in extraordinary circumstances communicated with the professor before the deadline.
+_Late homework will not be accepted. You are responsible to make sure your assignment is submitted before the deadline. Late submissions will receive a zero. Individual extensions will only be given in extraordinary circumstances communicated with the professor before the deadline._
 
 Please follow the specific instructions and submission policy for each assignment. Your assignment may be submitted on paper to the instructor. In the case of an electronic submission, make sure that your submission is in Microsoft Word or PDF format (ZIP, text or image files are not accepted). Also submit a single document and make sure all your figures are included in your main document. You are responsible to make sure that your file is not corrupted and that it is readable by the instructor. All submissions must include your name.
 
 ## Workload Expectation
 
-You are expected to keep up with the course material. This includes completion of the reading assignments that are posted in the lecture notes and/or schedule. Unless explicitly noted, you are responsible for all assigned material even if a topic was not covered during the lecture.
-This is a three-credit hour class, and consequently you are required to spend at least 6 hours per week outside of class to prepare for the course, study material, and work on homework assignments or project.
+You are expected to keep up with the course material. This includes completion of the reading assignments that are posted in the lecture notes and / or schedule. Unless explicitly noted, you are responsible for all assigned material even if a topic was not covered during the lecture.
+This is a five-credit hour class, and consequently you are required to spend at least 10 hours per week outside of class to prepare for the course, study material, and work on homework assignments or project.
 
 ## Courtesy
 
 * Students are responsible for all materials covered in class.
 * Turn off all cellphones, pagers, etc.
-* If you use a laptop to take notes, make sure all other applications (email, IM, Facebook, etc.) are off during the class.
+* If you use a laptop to take notes, make sure all other applications (email, IM, Snapchattagrammabook, etc.) are off during the class.
 * Strive for punctuality but if extenuating circumstances cause you to be late, please take a seat at the front of the classroom.
+* If you have a work thing that arises during class, take it outside please.
+* If you're running late send the instructor or a fellow student a text / email so we know if / when to expect you (yes, I might hold class start some days given weather or traffic conditions).
 
 ## Grading Dispute Policy
 
