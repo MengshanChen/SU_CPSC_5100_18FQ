@@ -59,11 +59,10 @@ ISBN-13: 978-0321635846<br/>
 * 10/10 - Requirements specification & validation
 * 10/15 - Scaling agile requirements (chp. 3)
 * 10/17 - Scaling agile requirements (chp. 4)
-* 10/22 - Requirements management (chp. 22)
+* 10/22 - Roles in the agile requirements process (chp. 11 / chp. 14)
 * 10/24 - The business requirements document (BRD) & market requirements document (MRD)
-* 10/29 - Roles in the agile requirements process (chp. 11 / chp. 14)
-          We might have a guest speaker this evening. Stayed tuned.
-* 10/31 - Mid-term exam in class, closed book
+* 10/29 - Mid-term exam in class, closed book
+* 10/31 - ** no class **
 * 11/05 - Portfolio planning (chp. 23)
 * 11/07 - Use cases and user stories (chp. 6 / chp. 19)
 * 11/12 - Scenario focused engineering
@@ -78,13 +77,16 @@ ISBN-13: 978-0321635846<br/>
 * 12/12 - Final exam due
 
 
-## Assignments (tenantive)
+## Assignments (tentative)
 
 * Vision and scope document
 * Business requirements document
 * Software requirements specification
 * User classification
 
+### Assignment #1
+
+The [first assignment](assignments/ASSIGN-1.md) is due 17 October by the end of class at 20:05, in my inbox. 
 
 ## Grading
 
