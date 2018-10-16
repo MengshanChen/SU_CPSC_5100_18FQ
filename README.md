@@ -58,7 +58,7 @@ ISBN-13: 978-0321635846<br/>
 * 10/08 - Requirements elication & elaboration
 * 10/10 - Requirements specification & validation
 * 10/15 - Scaling agile requirements (chp. 3)
-* 10/17 - Scaling agile requirements (chp. 4)
+* 10/17 - Scaling agile requirements (chp. 4, assignment 1 due)
 * 10/22 - Roles in the agile requirements process (chp. 11 / chp. 14)
 * 10/24 - The business requirements document (BRD) & market requirements document (MRD)
 * 10/29 - Mid-term exam in class, closed book
