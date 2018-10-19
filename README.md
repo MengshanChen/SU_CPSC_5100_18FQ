@@ -52,6 +52,9 @@ ISBN-13: 978-0321635846<br/>
 
 ## Tentative list of topics / schedule
 
+This list is subject to change as we adjust topics over the quarter. Assume this is the
+correct sequence until otherwise changed.
+
 * 09/26 - Administrivia, introduction to "software requirements" (chp. 1)
 * 10/01 - Requirements from the customer perspective (Bill of Rights and Responsibilities)
 * 10/03 - The requirements process (chp. 2)
@@ -60,20 +63,20 @@ ISBN-13: 978-0321635846<br/>
 * 10/15 - Scaling agile requirements (chp. 3)
 * 10/17 - Scaling agile requirements (chp. 4, assignment 1 due)
 * 10/22 - Roles in the agile requirements process (chp. 11 / chp. 14)
-* 10/24 - The business requirements document (BRD) & market requirements document (MRD)
+* 10/24 - Project vision and scope (chp. 13)
 * 10/29 - Mid-term exam in class, closed book
 * 10/31 - ** no class **
 * 11/05 - Portfolio planning (chp. 23)
 * 11/07 - Use cases and user stories (chp. 6 / chp. 19)
-* 11/12 - Scenario focused engineering
-* 11/14 - Project vision and scope (chp. 13)
+* 11/12 - ** no class, school holiday **
+* 11/14 - What do we mean by business rules
 * 11/19 - User identification and user classification
-* 11/21 - What do we mean by business rules
+* 11/21 - ** no class, school holiday **
 * 11/26 - Intersection of design with requirements: UI / UX (chp. 7)
 * 11/28 - Intersection of architecture with requirements: Non-functional requirements (chp. 17)
-* 12/03 - The software requirements specification (SRS)
+* 12/03 - The major documents: V&S, MRD, BRD, SRS
 * 12/05 - Requirements and different project types
-* 12/10 - Presentations, final exam available
+* 12/10 - Scenario focused engineering
 * 12/12 - Final exam due
 
 
