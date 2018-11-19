@@ -1,0 +1,31 @@
+digraph std {
+    #rankdir="LR";
+    splines=false;
+
+    graph [ bgcolor=white, fontname=Arial, fontcolor=blue, fontsize=8 ];
+    node [ fontname="Fira Code", fontcolor=blue, fontsize=8, shape="box" ];
+    edge [ fontname="Fira Code", fontcolor=red, fontsize=8, arrowsize=0.5 ];
+
+    IsUserAuthorized [ shape="diamond", label="Is user\nauthorized?" ]
+    IsChemicalAvailable [ shape="diamond", label="Is chemical\navailable?" ]
+    IsChemicalHazardous [ shape="diamond", label="Is chemical\nhazardous?" ]
+    IsUserTrained [ shape="diamond", label="Is user\ntrained?" ]
+
+    IsUserAuthorizedReject [ shape="box", label="reject request" ]
+    IsChemicalAvailableReject [ shape="box", label="reject request" ]
+    IsChemicalHazardousAccept [ shape="box", label="accept request" ]
+    IsUserTrainedReject [ shape="box", label="reject request" ]
+    IsUserTrainedAccept [ shape="box", label="accept request" ]
+
+    IsUserAuthorized -> IsUserAuthorizedReject [ label="no" ]
+    IsUserAuthorized -> IsChemicalAvailable [ label="yes" ]
+    
+    IsChemicalAvailable -> IsChemicalHazardous [ label="yes" ]
+    IsChemicalAvailable -> IsChemicalAvailableReject [ label="no" ]
+
+    IsChemicalHazardous -> IsChemicalHazardousAccept [ label="no" ]
+    IsChemicalHazardous -> IsUserTrained [ label="yes" ]
+
+    IsUserTrained -> IsUserTrainedAccept [ label="yes" ]
+    IsUserTrained -> IsUserTrainedReject [ label="no" ]
+}

@@ -1,0 +1,33 @@
+digraph std {
+    rankdir="LR";
+    splines=true;
+
+    graph [ bgcolor=white, fontname="Fira Code", fontcolor=blue, fontsize=8 ];
+    node [ fontname="Fira Code", fontcolor=blue, fontsize=8, shape="box" ];
+    edge [ fontname="Fira Code", fontcolor=red, fontsize=8, arrowsize=0.5 ];
+
+    User [ fillcolor="gray", fontcolor="black", style="bold" ]
+    ProcuringCustomer [ label="Procuring\nCustomer" ]
+    Marketing
+    BusinessAnalyst [ label="Business\nAnalyst" ]
+    Developer [ fillcolor="gray", fontcolor="black", style="bold" ]
+
+    ProductChampion [ label="Product\nChampion" ]
+    Trainer
+    FocusGroup [ label="Focus\nGroup" ]
+    HelpDesk [ label="Help\nDesk" ]
+    UserManager [ label="User\nManager" ]
+    Sales
+    ProductManager [ label="Product\nManager" ]
+
+    User -> Developer  [ color="black", style="bold" ]
+    User -> ProductChampion -> Developer
+        ProductChampion -> BusinessAnalyst
+    User -> Trainer -> BusinessAnalyst
+    User -> BusinessAnalyst
+    User -> FocusGroup -> Marketing
+    User -> ProcuringCustomer -> Marketing -> BusinessAnalyst -> Developer
+    User -> HelpDesk -> BusinessAnalyst
+    User -> UserManager -> BusinessAnalyst
+    User -> Sales -> ProductManager -> Developer
+}

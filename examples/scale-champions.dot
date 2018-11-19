@@ -1,0 +1,37 @@
+graph std {
+    rankdir="LR";
+    splines=true;
+
+    graph [ bgcolor=white, fontname="Fira Code", fontcolor=blue, fontsize=8 ];
+    node [ fontname="Fira Code", fontcolor=white, fontsize=8, shape="box", style=filled, fillcolor="#303030" ];
+    edge [ fontname="Fira Code", fontcolor=red, fontsize=8 ];
+
+    ProjectManager
+
+    Analyst1
+    ChemistProductChampion [ label="Chemist\nProduct Champion" ]
+    ChemistBackupTeam [ label="Chemist\nBackup Team" ]
+
+    Analyst2
+    BuyerProductChampion [ label="Buyer\nProduct Champion" ]
+    HealthAndSafetyChampion [ label="Health and Safety\nProduct Champion" ]
+
+    Analyst3
+    StockroomChampion [ label="Stockroom\nProduct\nChampion" ]
+
+    node [ fontname="Fira Code", fontcolor=black, fontsize=8, shape="box", style=rounded, fillcolor="#808080" ];
+        Chemists
+        Buyers
+        HealthAndSafetyTeam [ label="Health and Safety\nDepartment Staff" ]
+        StockroomTeam [ label="Stockroom\nTeam" ]
+
+
+    ProjectManager -- Analyst1 -- ChemistProductChampion -- ChemistBackupTeam
+                      ChemistBackupTeam -- Chemists [ penwidth=5 ]
+    ProjectManager -- Analyst2 -- BuyerProductChampion
+                      BuyerProductChampion -- Buyers [ penwidth=5 ]
+                      Analyst2 -- HealthAndSafetyChampion
+                          HealthAndSafetyChampion -- HealthAndSafetyTeam [ penwidth=5 ]
+    ProjectManager -- Analyst3 -- StockroomChampion
+                         StockroomChampion -- StockroomTeam [ penwidth=5 ]
+}

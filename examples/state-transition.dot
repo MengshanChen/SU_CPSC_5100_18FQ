@@ -1,0 +1,30 @@
+digraph std {
+    graph [ bgcolor=white, fontname=Arial, fontcolor=blue, fontsize=8 ];
+    node [ fontname="Fira Code", fontcolor=blue, fontsize=8, shape="box" ];
+    edge [ fontname="Fira Code", fontcolor=red, fontsize=8, arrowsize=0.5, labeldistance=0.0 ];
+
+    InPrep [ label="In Preparation", style="filled", fillcolor="darkgreen", fontcolor="white" ];
+    Postponed [ label="Postponed" ];
+    Accepted [ label="Accepted" ];
+    Placed [ label="Placed" ];
+    Fulfilled [ label="Fulfilled", style="filled", fillcolor="red", fontcolor="white" ];
+    BackOrdered [ label="Back-ordered" ];
+    Canceled [ label="Canceled", style="filled", fillcolor="red", fontcolor="white" ];
+
+    InPrep -> Postponed [ label="requester saves\nincomplete request" ];
+    InPrep -> Accepted [ label="system accepts\nvalid request" ];
+
+    Postponed -> InPrep [ label="requester retrieves\nincompleted request" ];
+    Postponed -> Canceled [ label="requester\ncancels request" ];
+
+    Accepted -> Fulfilled [ label="chemical stockroom\nfills request" ];
+    Accepted -> Placed [ label="buyer places\norder with vendor" ];
+    Accepted -> Canceled [ label="requester\ncancels order" ];
+
+    Placed -> Fulfilled [ label="chemical\nreceived\nfrom vendor" ];
+    Placed -> BackOrdered [ label="vendor places chemical\nin back-order" ];
+    Placed -> Canceled [ label="buyer\ncancels\nvendor order" ];
+
+    BackOrdered -> Fulfilled [ label="chemical received\nfrom vendor" ];
+    BackOrdered -> Canceled [ label="buer cancels\nvendor order" ];
+}

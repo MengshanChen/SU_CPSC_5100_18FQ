@@ -1,0 +1,46 @@
+digraph std {
+    graph [ bgcolor=white, fontname=Arial, fontcolor=blue, fontsize=8 ];
+    node [ fontname="Fira Code", fontcolor=blue, fontsize=8, shape="box" ];
+    edge [ fontname="Fira Code", fontcolor=red, fontsize=8, arrowsize=0.5 ];
+
+    {
+        rank=same;
+        Begin [ shape="circle", style="filled", fillcolor="darkgreen", fontcolor="white", label="" ] 
+        Canceled [ shape="doublecircle", style="filled", fillcolor="red", fontcolor="white", label=""  ]
+        OK [ shape="doublecircle", style="filled", fillcolor="black", fontcolor="white", label=""  ]
+    }
+
+    {
+        rank=same;
+        CurrentRequestList [ label="Current Request List", group="c" ]
+        ConfirmRequestIsAccepted [ label="Confirm Request Is Accepted" ]
+    }
+
+    {
+        rank=same;
+        ranksep="2.0 equally"
+        DisplayErrorMessage [ label="Display Error Message" ]
+        EnterChemicalToRequest [ label="Enter Chemical To Request", group="c" ]
+        ListOfVendorsForChemical [ label="List Of Vendors For Chemical" ]
+    }
+
+    ListOfStockroomContainers [ label="List Of Stockroom Containers", group="c" ]
+    ContainerHistory [ label="Container History", group="c" ]
+
+    Begin -> CurrentRequestList [ label="ask to place\la request\l" ]
+    CurrentRequestList -> Canceled [ label="cancel entire\lrequest\l" ]
+    CurrentRequestList -> ConfirmRequestIsAccepted [ label="submit request\lfor > 0 chemicals\l" ]
+    CurrentRequestList -> CurrentRequestList [ label="delete chemical\lfrom list\l" ]
+    CurrentRequestList -> EnterChemicalToRequest [ label="request another\lchemical\l" ]
+    ConfirmRequestIsAccepted -> OK [ label="OK; exit\lrequest function\l" ]
+    EnterChemicalToRequest -> ListOfVendorsForChemical [ label="request chemical\lfrom vendor\l" ]
+    EnterChemicalToRequest -> DisplayErrorMessage [ label="invalid chemical\l" ]
+    EnterChemicalToRequest -> ListOfStockroomContainers [ label="request chemical\lfrom stockroom\l" ]
+    DisplayErrorMessage -> EnterChemicalToRequest [ label="OK" ]
+    ListOfVendorsForChemical -> EnterChemicalToRequest [ label="request a\ldifferent chemical\l" ]
+    ListOfStockroomContainers -> CurrentRequestList [ label="cancel addition\lof new chemical\l" ]
+    ListOfStockroomContainers -> CurrentRequestList [ label="select container\ladd and to list\l" ]
+    ListOfStockroomContainers -> ListOfVendorsForChemical [ label="request\lchemical\lfrom vendor\l" ]
+    ListOfStockroomContainers -> ContainerHistory [ label="ask to see\lcontainer history\l" ]
+    ContainerHistory -> ListOfStockroomContainers [ label="return\l" ];
+}
