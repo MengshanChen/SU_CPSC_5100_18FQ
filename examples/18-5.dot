@@ -1,0 +1,29 @@
+digraph std {
+    rankdir="LR";
+    splines=false;
+
+    graph [ bgcolor=white, fontname=Arial, fontcolor=blue, fontsize=8 ];
+    node [ fontname="Fira Code", fontcolor=blue, fontsize=8, shape="box" ];
+    edge [ fontname="Fira Code", fontcolor=red, fontsize=8, arrowsize=0.5 ];
+
+    HasEmergency [shape=none, label="Has Emergency\nSequence\nOccurred?"]
+    IsRemote [shape=none, label="Is Remote\nNotification\nEnabled?"]
+    DoNothing1 [shape=none, label="Do Nothing"]
+    InitiateEmergency [shape=none, label="Initiate\nEmergency\nMessage"]
+    IsLocal [shape=none, label="Is Local\nAlarm\nEnabled?"]
+    DidRemote [shape=none, label="Did Remote\nSecurity\nRespond?"]
+    ActivateSiren1 [shape=none, label="Activate Siren"]
+    DoNothing2 [shape=none, label="Do Nothing"]
+    DoNothing3 [shape=none, label="Do Nothing"]
+    ActivateSiren2 [shape=none, label="Activate Siren"]
+
+    HasEmergency -> IsRemote [label="Yes"]
+      IsRemote -> InitiateEmergency [label="Yes"]
+        InitiateEmergency -> DidRemote
+          DidRemote -> DoNothing3 [label="Yes"]
+          DidRemote -> ActivateSiren2 [label="No"]
+      IsRemote -> IsLocal [label="No"]
+        IsLocal -> ActivateSiren1 [label="Yes"]
+        IsLocal -> DoNothing2 [label="No"]
+    HasEmergency -> DoNothing1 [label="No"]
+}

@@ -1,0 +1,18 @@
+HAN->Platform:Collect "Actual" Master Reads
+Platform->Platform:validation
+HAN->Platform:Collect "Actual" Master Reads
+Platform->Platform:validation
+
+Platform->Platform:Generate "Raw" Export (Actual Reads)
+Platform->EE:Download/Transmit "Raw" Export
+EE->EE:Estimation
+EE->Platform:Fill in "Estimated" meter Reads
+Platform->Platform:Generate "Raw" Export
+Platform->Platform:Generate "Completed" Export
+Platform->Platform:Generate "TOU Bucket" Export
+Platform->Client:Download "Raw" Export
+Platform->Client:Download "Completed" Export
+Platform->Client:Download "TOU Bucket" Export
+Client->PS:Trigger File
+Platform->PS:Invoke Core Service
+PS->Client:Billing Determinants

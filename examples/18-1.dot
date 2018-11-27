@@ -1,0 +1,52 @@
+digraph std {
+    graph [ bgcolor=white, fontname=Arial, fontcolor=blue, fontsize=8 ];
+    node [ fontname="Fira Code", fontcolor=blue, fontsize=8, shape="box" ];
+    edge [ fontname="Fira Code", fontcolor=red, fontsize=8, arrowsize=0.5, labeldistance=0.0 ];
+
+    Start [ shape=circle style=filled color=black fontcolor=white width=0.25 label="" ]
+    NewOrExistingDeployment  [ shape=diamond label="new or existing" ]
+    CreateTheVirtualizedImage
+        ProvisionCustomer
+        DeployVirtualMachinesAtCustomer
+      HostedOrAppliance [ shape=diamond label="hosted / appliance" ]
+        ProcureHardware
+        ConfigureAppliance
+        DeployVirtualMachinesInAppliance
+      JoinPoint1 [ shape=diamond label="" ]
+    ConfigurePlatform
+        OpenNetworkPort
+        SetupOTIServer
+      BroadbandOrBackhaul [ shape=diamond label="broadband / backhaul" ]
+        InstallBackhaul
+        PointPlatformAtBackhaul
+        PointServerAtPlatform
+      JoinPoint2 [ shape=diamond label="" ]
+    LaunchPlatform
+    JoinPoint3 [ shape=diamond label="" ]
+    UsersToAdd [ shape=diamond label="users to add" ]
+    IngestUsers
+    Complete [ shape=doublecircle style=filled color=black fontcolor=white width=0.25 label="" ]
+
+    Start -> NewOrExistingDeployment:n
+      NewOrExistingDeployment :s-> JoinPoint3:n [ label="new deployment" ] 
+      NewOrExistingDeployment:w -> CreateTheVirtualizedImage [ label="existing\ndeployment" ]
+      CreateTheVirtualizedImage -> HostedOrAppliance:n
+        HostedOrAppliance:w -> ProvisionCustomer [ label="hosted\nmodel" ]
+          ProvisionCustomer -> DeployVirtualMachinesAtCustomer -> JoinPoint1:w
+        HostedOrAppliance:e -> ProcureHardware [ label="appliance\nmodel" ]
+          ProcureHardware -> ConfigureAppliance -> DeployVirtualMachinesInAppliance -> JoinPoint1:e
+
+    JoinPoint1 -> ConfigurePlatform -> BroadbandOrBackhaul
+        BroadbandOrBackhaul -> OpenNetworkPort [ label="broadband" ]
+          OpenNetworkPort -> SetupOTIServer -> JoinPoint2:w
+        BroadbandOrBackhaul -> InstallBackhaul [ label="backhaul" ]
+          InstallBackhaul -> PointPlatformAtBackhaul -> PointServerAtPlatform -> JoinPoint2:e
+
+    JoinPoint2:s -> LaunchPlatform
+
+    LaunchPlatform -> JoinPoint3:w
+    JoinPoint3:s -> UsersToAdd:n
+     UsersToAdd:w -> IngestUsers [ label="yes" ]
+     UsersToAdd:s -> Complete [ label="no" ]
+       IngestUsers -> Complete
+}

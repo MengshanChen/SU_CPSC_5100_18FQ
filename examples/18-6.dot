@@ -1,0 +1,36 @@
+digraph std {
+    #rankdir="LR";
+    splines=true;
+
+    graph [ bgcolor=white, fontname=Arial, fontcolor=blue, fontsize=8 ];
+    node [ fontname="Fira Code", fontcolor=blue, fontsize=8, shape="box" ];
+    edge [ fontname="Fira Code", fontcolor=red, fontsize=8, arrowsize=0.5 ];
+
+    Off [shape=oval, label="Off"]
+    { 
+        rank=same 
+        EvenLit [shape=oval, label="Even Lit"]
+        OddLit [shape=oval, label="Odd Lit"]
+    }
+    { 
+        rank=same 
+        EvenLit_Out [shape=oval, label="Even Lit / LOUT"]
+        OddLit_Out [shape=oval, label="Odd Lit / LOUT"]
+    }
+
+    EvenLit -> EvenLit_Out [label="Light\nburned\nout"]
+    EvenLit -> OddLit [label="Count"]
+    EvenLit -> Off [label="Off"]
+
+    OddLit -> EvenLit [label="Count"]
+    OddLit -> OddLit_Out [label="Light\nburned\nout"]
+    OddLit -> Off [label="Off"]
+    
+    EvenLit_Out -> Off [label="Off"]
+    EvenLit_Out -> OddLit_Out [label="1 sec"]
+
+    OddLit_Out -> Off [label="Off"]
+    OddLit_Out -> EvenLit_Out [label="1 sec"]
+
+    Off -> EvenLit [label="On"]
+}

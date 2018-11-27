@@ -1,0 +1,7 @@
+SET sum = 0
+FOR-EACH customer
+    IF customer purchased paid support AND 
+        current month BETWEEN (2 months after ship) and (14 months after ship) THEN
+        SET sum = sum + ((amount customer paid) / 12)
+    END-IF
+END-FOR
